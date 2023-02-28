@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Footer = () => {
+    const date = new Date();
     return (
         <footer className="p-10 bg-neutral text-neutral-content">
             <div className='footer'>
@@ -26,7 +27,7 @@ const Footer = () => {
         </div>
             </div>
      
-        <p className='pt-10 text-center'><small>Copyright © 2023 - All right reserved</small></p>
+        <p className='pt-10 text-center'><small>Copyright © {date.getFullYear()} - All right reserved</small></p>
       </footer>
     );
 };
